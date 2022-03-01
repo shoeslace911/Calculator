@@ -20,10 +20,11 @@ padding:5%;
 }
 .display{
     background: black;
-    padding:5%;
-    font-size: 2vmax;
+    padding:4vmax;
+    font-size: 4vmax;
     color: white;
     text-align: end;
+    height: 130px;
 }
 .button{
     border: black 0.2px solid;
@@ -43,4 +44,9 @@ padding:5%;
     background-color: black;
     transition: 0.2s;
     cursor:pointer;
+}
+.history-container{
+    position: absolute;
+    top:10%;
+    left:10%;
 }
