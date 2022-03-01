@@ -1,63 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
 }
-.calculator-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:20%;
+.calculator-wrapper{
+box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
+max-width: 50%;
+margin:5% auto auto auto;
+text-align: center;
 }
-.numbers-container{
-    display: flex;
-    margin-top:1vmax;
+.buttons-wrapper{
+    display: grid; 
+grid-template-columns: repeat(4 , 4fr); 
+gap: 0px 0px; 
+padding:5%;
 }
-.numbers-div{
-    margin-right:2vmax;
-    font-size: 2vmax;
-    background-color: black;
-    border-radius: 50px;
-    color: white;
-    padding:15%;  
-    cursor: pointer;  
-}
-.open{
-    background: grey;
-}
-.numbers-text-box{
+.display{
+    background: black;
+    padding:5%;
     font-size: 2vmax;
     color: white;
-    background-color: black;
-    width:20vmax;
     text-align: end;
-    margin-left:7vmax;
-    margin-top:-5vmax;
 }
-.numbers-div:hover{
-    background: grey;
-    color:black;
-    transition: 0.5s;
+.button{
+    border: black 0.2px solid;
+    width:100%;
+    font-size: 2vmax;
+    height: 100px;
 }
-.plus-container{
-    color: black;
+
+.button:nth-child(12){
+    grid-row: span 2;
+    border: black solid 2px;
+    font-size:7.5vmax;
+    height: 200px;
 }
-.top-signs-container{
-    display: flex;
-    margin-left:15vmax;
-    flex-direction: row;
-}
-.signs{
-    margin-left:-15vmax;
-}
-.ac-and-del{
-    position: absolute;
-    right: 5%;
-}
-.function-containers{
+.button:hover{
+    color:white;
     background-color: black;
-    color: white;
-    margin-top:5vmax;
-    padding:3vmax;
-    border-radius: 50px;
+    transition: 0.2s;
+    cursor:pointer;
 }
